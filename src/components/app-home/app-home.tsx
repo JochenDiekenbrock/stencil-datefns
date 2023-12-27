@@ -1,4 +1,5 @@
 import { Component, h } from '@stencil/core';
+import {format} from "date-fns";
 
 @Component({
   tag: 'app-home',
@@ -15,7 +16,7 @@ export class AppHome {
         </p>
 
         <stencil-route-link url="/profile/stencil">
-          <button>Profile page</button>
+          <button>Profile page {format(new Date(), "yyyy-MM-dd")}</button>
         </stencil-route-link>
       </div>
     );

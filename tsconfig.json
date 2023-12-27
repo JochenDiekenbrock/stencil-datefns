@@ -6,14 +6,15 @@
     "experimentalDecorators": true,
     "lib": [
       "dom",
-      "es2015"
+      "es2021"
     ],
     "moduleResolution": "node",
     "module": "esnext",
-    "target": "es2017",
+    "target": "es2021",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "jsx": "react",
+    "skipLibCheck": true,
     "jsxFactory": "h"
   },
   "include": [
